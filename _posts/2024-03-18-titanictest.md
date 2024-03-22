@@ -13,89 +13,91 @@ type: hacks
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Titanic Survival Prediction</title>
-    <style>
-        body {
-            font-family: 'Courier New', monospace;
-            background-color: #1E1E2E;
-            color: #FAFAFA;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
+<style>
+    body {
+        font-family: 'Courier New', monospace;
+        background-color: #0D1F38; /* Naval Blue background */
+        color: #FFFFFF; /* White text */
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
 
-        .container {
-            background-color: #324A5F;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-            width: 70%;
-            max-width: 600px;
-            text-align: center; /* Center the content */
-        }
+    .container {
+        background-color: #1E416E; /* Deeper blue container */
+        padding: 20px;
+        border-radius: 16px; /* Slightly rounded corners */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+        width: 80%; /* Wider container */
+        max-width: 800px; /* Max width increased */
+        text-align: center; /* Center the content */
+    }
 
-        h2 {
-            color: #F78C6C;
-        }
+    h2 {
+        color: #6BB7E3; /* Lighter blue for headings */
+    }
 
-        form {
-            display: flex;
-            flex-direction: column;
-        }
+    form {
+        display: flex;
+        flex-direction: column;
+    }
 
-        label {
-            margin-top: 10px;
-            color: #CDD3DE;
-        }
+    label {
+        margin-top: 10px;
+        color: #BDD7EE; /* Lighter blue for labels */
+    }
 
-        input, select, button {
-            padding: 10px;
-            margin-top: 5px;
-            border: 2px solid #7289DA;
-            border-radius: 4px;
-            background-color: #2A2F3D;
-            color: #FFFFFF;
-        }
+    input,
+    select,
+    button {
+        padding: 12px; /* Slightly larger padding */
+        margin-top: 8px; /* Slightly increased spacing */
+        border: 2px solid #2E5A8E; /* Darker blue border */
+        border-radius: 8px; /* Slightly rounded corners */
+        background-color: #0F304E; /* Deeper blue background */
+        color: #FFFFFF; /* White text */
+    }
 
-        input::placeholder {
-            color: #A4B0BE;
-            opacity: 1;
-        }
+    input::placeholder {
+        color: #8AB6D6; /* Lighter blue for placeholder text */
+        opacity: 1;
+    }
 
-        button {
-            background-color: #E91E63;
-            color: #FFFFFF;
-            margin-top: 20px;
-            transition: background-color 0.3s;
-        }
+    button {
+        background-color: #4FA2C4; /* Lighter blue button */
+        color: #FFFFFF; /* White text */
+        margin-top: 20px;
+        transition: background-color 0.3s;
+    }
 
-        button:hover {
-            background-color: #FCB045;
-        }
+    button:hover {
+        background-color: #85C0D9; /* Lighter blue hover */
+    }
 
-        #predictionResult {
-            margin-top: 20px;
-            text-align: center;
-            padding: 10px;
-            background-color: #7289DA;
-            color: #FFFFFF;
-            border-radius: 4px;
-            display: none;
-        }
+    #predictionResult {
+        margin-top: 20px;
+        text-align: center;
+        padding: 12px; /* Slightly larger padding */
+        background-color: #2E5A8E; /* Darker blue result background */
+        color: #FFFFFF; /* White text */
+        border-radius: 8px; /* Slightly rounded corners */
+        display: none;
+    }
 
-        .images {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 20px;
-        }
+    .images {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
 
-        iframe {
-            width: 45%;
-            height: auto;
-        }
-    </style>
+    iframe {
+        width: 45%;
+        height: auto;
+    }
+</style>
 </head>
 <body>
     <div class="container">
@@ -140,11 +142,6 @@ type: hacks
             <button type="submit">Predict Survival</button>
         </form>
         <div id="predictionResult"></div>
-    </div>
-
-    <div class="images">
-        <iframe src="https://drive.google.com/file/d/1nU2z_ioqbc5Gd-Yyc_XXnOxf4CIxZpdb/preview" width="640" height="480" allow="autoplay"></iframe>
-        <iframe src="https://drive.google.com/file/d/116ADJ2amQTmEHck_njXpqbDHNMChs8rQ/preview" width="640" height="480" allow="autoplay"></iframe>
     </div>
 
     <script>
