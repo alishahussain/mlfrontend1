@@ -25,18 +25,20 @@ type: hacks
         align-items: center;
         min-height: 100vh;
     }
-
     .container {
-        background-color: #1E416E; /* Deeper blue container */
-        padding: 20px;
-        border-radius: 16px; /* Slightly rounded corners */
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
-        width: 80%; /* Wider container */
-        max-width: 800px; /* Max width increased */
-        text-align: center; /* Center the content */
-    }
-
+    background-color: #1E416E; /* Deeper blue container */
+    padding: 20px;
+    border-radius: 16px; /* Slightly rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+    width: 125%; /* Increase width */
+    max-width: 1500px; /* Set a max-width to limit the container size */
+    text-align: center; /* Center the content */
+    position: relative; /* Make the container positioned */
+    left: 50%; /* Move container 50% to the right */
+    transform: translateX(-50%); /* Translate container back by 50% of its own width */
+}
     h2 {
+        font-family: 'Courier New', monospace;
         color: #6BB7E3; /* Lighter blue for headings */
     }
 
@@ -96,6 +98,9 @@ type: hacks
     iframe {
         width: 45%;
         height: auto;
+    }
+    label {
+        font-family: 'Courier New', monospace;
     }
 </style>
 </head>
