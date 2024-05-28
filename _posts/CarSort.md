@@ -1,4 +1,12 @@
-<!DOCTYPE html>
+---
+toc: true
+comments: false
+layout: post
+title: Car Sorter
+courses: { compsci: {week: 26} }
+type: hacks
+---
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
