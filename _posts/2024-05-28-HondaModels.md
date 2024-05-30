@@ -5,6 +5,7 @@ layout: post
 title: Honda Sorter
 courses: { compsci: {week: 35} }
 type: hacks
+permalink: /HondaModels
 ---
 
 <html lang="en">
@@ -16,19 +17,25 @@ type: hacks
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
+            background: url('https://di-uploads-pod13.dealerinspire.com/hondaofolathe/uploads/2024/04/Honda-1440x576-1.jpg') no-repeat center center fixed;
+            background-size: cover;
         }
         h1 {
             text-align: center;
+            color: white;
         }
         table {
             width: 100%;
             border-collapse: collapse;
             margin: 20px 0;
+            background-color: white;
         }
         th, td {
             padding: 10px;
             border: 1px solid #ddd;
             text-align: left;
+            color: white;
+            color: #333;
         }
         th {
             cursor: pointer;
@@ -51,7 +58,8 @@ type: hacks
             cursor: pointer;
         }
     </style>
-</head>
+<button id="HomeButton" onclick="location.href='CarHome';">Back To Home</button>
+
 <body>
     <h1>Honda Car Models</h1>
     <button id="fetchDataBtn">Retrieve Data</button>
@@ -122,4 +130,4 @@ type: hacks
         }
     </script>
 </body>
-</html>
+

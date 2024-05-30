@@ -5,6 +5,7 @@ layout: post
 title: BMW Sorter
 courses: { compsci: {week: 35} }
 type: hacks
+permalink: /BMWmodels
 ---
 
 <html lang="en">
@@ -16,19 +17,25 @@ type: hacks
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
+            background: url('https://cdn.dicklovett.co.uk/uploads/header_image/2_90_l.jpg?v=1643385270') no-repeat center center fixed;
+            background-size: cover;
         }
         h1 {
             text-align: center;
+            color: white;
         }
         table {
             width: 100%;
             border-collapse: collapse;
             margin: 20px 0;
+            background-color: white;
         }
         th, td {
             padding: 10px;
             border: 1px solid #ddd;
             text-align: left;
+            color: white;
+            color: #333;
         }
         th {
             cursor: pointer;
@@ -51,7 +58,8 @@ type: hacks
             cursor: pointer;
         }
     </style>
-</head>
+<button id="HomeButton" onclick="location.href='CarHome';">Back To Home</button>
+
 <body>
     <h1>BMW Car Models</h1>
     <button id="fetchDataBtn">Retrieve Data</button>
@@ -122,4 +130,4 @@ type: hacks
         }
     </script>
 </body>
-</html>
+
