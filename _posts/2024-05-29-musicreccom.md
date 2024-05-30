@@ -6,7 +6,7 @@ title: Music recommendation
 courses: { compsci: {week: 26} }
 type: hacks
 ---
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -78,14 +78,12 @@ type: hacks
             genres.forEach(genre => {
                 ratings[genre] = parseInt(document.getElementById(genre).value);
             });
-
             const recommendedArtists = recommendArtists(ratings);
             displayRecommendations(recommendedArtists);
         }
         function recommendArtists(ratings) {
             let maxRating = -1;
             let favoriteGenre = '';
-
             for (const genre in ratings) {
                 if (ratings[genre] > maxRating) {
                     maxRating = ratings[genre];
