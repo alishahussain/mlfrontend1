@@ -6,7 +6,6 @@ title: Music recommendation
 courses: { compsci: {week: 26} }
 type: hacks
 ---
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -14,25 +13,70 @@ type: hacks
     <title>Music Recommendation</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
         }
-        h1, h2 {
-            color: #333;
+        h1 {
+            color: #444;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        h2 {
+            color: #666;
+            font-size: 28px;
+            margin-bottom: 20px;
         }
         form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            text-align: left;
             margin-bottom: 20px;
         }
         .genre-input {
             margin-bottom: 10px;
         }
+        label {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 18px;
+            color: #333;
+        }
+        select {
+            padding: 5px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
         button {
+            background-color: #4CAF50;
+            color: white;
             padding: 10px 20px;
             font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #45a049;
         }
         #recommendations {
-            font-size: 18px;
-            color: #555;
+            font-size: 22px;
+            color: #333;
+            margin-top: 20px;
+        }
+        .music-note {
+            width: 50px;
+            height: 50px;
+            margin: 0 10px;
+            vertical-align: middle;
         }
     </style>
 </head>
@@ -49,12 +93,12 @@ type: hacks
         // Sample data for genres and artists
         const genres = ['Rock', 'Pop', 'Jazz', 'Classical', 'Hip-Hop', 'Country'];
         const artists = {
-            'Rock': ['Queen', 'Nirvana', 'The Rolling Stones', 'Pink Floyd', 'AC/DC'],
-            'Pop': ['Taylor Swift', 'Ariana Grande', 'Billie Eilish', 'Ed Sheeran', 'Dua Lipa'],
-            'Jazz': ['Miles Davis', 'John Coltrane', 'Louis Armstrong', 'Ella Fitzgerald', 'Duke Ellington'],
-            'Classical': ['Beethoven', 'Johann Sebastian Bach', 'Mozart', 'John Williams', 'Joshua Bell'],
-            'Hip-Hop': ['Kendrick Lamar', 'Drake', 'J. Cole', 'Travis Scott', 'Nicki Minaj'],
-            'Country': ['Johnny Cash', 'Dolly Parton', 'Luke Bryan', 'Carrie Underwood', 'Morgan Wallen']
+            'Rock': ['Bruce Springsteen', 'Foo Fighters', 'Green Day', 'Nirvana', 'The Eagles'],
+            'Pop': ['Taylor Swift', 'Ariana Grande', 'Billie Eilish', 'Katy Perry', 'Bruno Mars'],
+            'Jazz': ['Herbie Hancock', 'Wynton Marsalis', 'Norah Jones', 'Esperanza Spalding', 'Diana Krall'],
+            'Classical': ['Leonard Bernstein', 'John Williams', 'Philip Glass', 'Yo-Yo Ma', 'Joshua Bell'],
+            'Hip-Hop': ['Kendrick Lamar', 'Drake', 'J. Cole', 'Cardi B', 'Post Malone'],
+            'Country': ['Garth Brooks', 'Carrie Underwood', 'Blake Shelton', 'Luke Bryan', 'Miranda Lambert']
         };
         let currentArtistIndex = 0;
         // Populate the genre input fields with rating scales
@@ -107,4 +151,3 @@ type: hacks
     </script>
 </body>
 </html>
-
